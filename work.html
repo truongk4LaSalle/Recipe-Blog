@@ -1,0 +1,90 @@
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Fluffy French Toast Recipe</title> 
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container2">
+  <nav class="navbar">
+    <ul class="nav--list">
+      <li class="item"><a href="work.html">Home</a></li>
+      <li class="item"><a href="page2.html">Pancake</a></li>
+      <li class="item"><a href="page3.html">Waffle</a></li>
+    </ul>
+  </nav>
+</div>
+=
+<h1 style="text-align:center;">French Toast</h1>
+<p style="text-align:center;">
+<strong>Recipe Overview:</strong> French toast <br>
+Prep Time: 10 minutes  Cook Time: 10 minutes  Servings: 4
+</p>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <img src="img/FrenchToast 1.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <img src="img/FrenchToast 2.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <img src="img/FrenchToast 3.jpg" style="width:100%">
+</div>
+</div>
+<div class="container">
+
+<div>
+<h2>Ingredients</h2>
+<ul>
+<li>Batter
+    <ul>
+        <li>4 eggs</li>
+        <li>2/3 cup milk</li>
+        <li>1/4 cup all-purpose flour</li>
+        <li>1/4 cup sugar</li>
+        <li>1 teaspoon vanilla extract</li>
+        <li>1 pinch salt</li>
+        <li>1 pinch ground cinnamon</li>
+    </ul>
+</li>
+<li>For Cooking
+    <ul>
+        <li>8 slices of bread</li>
+        <li>Butter for the skillet</li>
+    </ul>
+</li>
+</ul>
+</div>
+
+<div>
+<h2>Steps</h2>
+<ol>
+<li> In a large bowl or shallow dish, whisk together the eggs, milk, vanilla, and cinnamon with a pinch of salt.</li>
+<li>Dip each slice of bread into the egg mixture, making sure both sides are fully coated.</li>
+<li>Heat a nonstick skillet or griddle over medium heat.</li>
+<li>Add as many slices as will fit in a single layer and cook for 1 to 3 minutes per side.</li>
+<li>They’re ready when they’re nicely golden brown on both sides.</li>
+</ol>
+</div>
+</div>
+</body>
+</html>
+
+<script>
+  let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>

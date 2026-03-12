@@ -1,0 +1,102 @@
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Waffle Recipe</title> 
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container2">
+  <nav class="navbar">
+    <ul class="nav--list">
+      <li class="item"><a href="work.html">Home</a></li>
+      <li class="item"><a href="page2.html">Pancake</a></li>
+      <li class="item"><a href="page3.html">Waffle</a></li>
+    </ul>
+  </nav>
+</div>
+
+<h1 style="text-align:center;">Waffles</h1>
+<p style="text-align:center;">
+<strong>Recipe Overview:</strong> A waffle recipe
+<br>Prep Time: 10 minutes  Cook Time: 10 minutes  Servings: 10 waffles
+</p>
+
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <img src="img/Waffle 1.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <img src="img/Waffle 2.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <img src="img/Waffle 3.jpg" style="width:100%">
+</div>
+</div>
+
+<div class="container">
+
+<div>
+<h2>Ingredients</h2>
+<ul>
+<li>Dry Ingredients
+    <ul>
+        <li>2 1/4 cups all-purpose flour</li>
+        <li>1/4 cup granulated sugar</li>
+        <li>1 tablespoon baking powder</li>
+        <li>3/4 teaspoon salt</li>
+    </ul>
+</li>
+<li>Wet Ingredients
+    <ul>
+        <li>2 cups milk</li>
+        <li>1/2 cup unsalted butter, melted</li>
+        <li>2 large eggs</li>
+        <li>2 teaspoons vanilla extract</li>
+    </ul>
+</li>
+<li>For Serving
+    <ul>
+        <li>Maple syrup</li>
+        <li>Butter</li>
+        <li>Fruit or powdered sugar if desired</li>
+    </ul>
+</li>
+</ul>
+</div>
+
+<div>
+<h2>Steps</h2>
+<ol>
+<li>Preheat your waffle iron.</li>
+<li>Whisk the dry ingredients together.</li>
+<li>To a medium bowl, add the milk, eggs, and vanilla extract.</li>
+<li>Pour in the melted butter and whisk the wet ingredients together.</li>
+<li>Add the wet ingredients to the dry ingredients and stir just until combined.</li>
+<li>Grease the hot waffle iron with butter, vegetable oil, or cooking spray.</li>
+<li>Cook until golden brown.</li>
+<li>Place the waffles on a wire rack until ready to serve.</li>
+</ol>
+</div>
+
+</div>
+</body>
+</html>
+
+<script>
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 2000);
+  }
+</script>

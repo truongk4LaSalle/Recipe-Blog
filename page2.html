@@ -1,0 +1,100 @@
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Fluffy Pancakes Recipe</title> 
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container2">
+  <nav class="navbar">
+    <ul class="nav--list">
+      <li class="item"><a href="work.html">Home</a></li>
+      <li class="item"><a href="page2.html">Pancake</a></li>
+      <li class="item"><a href="page3.html">Waffle</a></li>
+    </ul>
+  </nav>
+</div>
+
+<h1 style="text-align:center;">Pancakes</h1>
+<p style="text-align:center;">
+<strong>Recipe Overview:</strong> A  pancake recipe<br>
+Prep Time: 10 minutes  Cook Time: 15 minutes Servings: 4
+</p>
+
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <img src="img/Pancake 1.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <img src="img/Pancake 2.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <img src="img/Pancake 3.jpg" style="width:100%">
+</div>
+</div>
+
+<div class="container">
+<div>
+<h2>Ingredients</h2>
+<ul>
+<li>Dry Ingredients
+    <ul>
+        <li>2 cups white whole wheat flour or all-purpose flour</li>
+        <li>1 teaspoon baking powder</li>
+        <li>1/2 teaspoon baking soda</li>
+        <li>3 tablespoons granulated sugar</li>
+        <li>1/2 teaspoon salt</li>
+    </ul>
+</li>
+<li>Wet Ingredients
+    <ul>
+        <li>2 1/4 cups buttermilk, yogurt, or milk</li>
+        <li>2 large eggs, separated</li>
+        <li>2 tablespoons melted butter</li>
+    </ul>
+</li>
+<li>For Serving
+    <ul>
+        <li>Butter for the pan</li>
+        <li>Butter for serving</li>
+        <li>Syrup or fruit if desired</li>
+    </ul>
+</li>
+</ul>
+</div>
+
+<div>
+<h2>Steps</h2>
+<ol>
+<li>Sift flour, baking powder, sugar, and salt together in a large bowl.</li>
+<li>Make a well in the center and add milk, melted butter, and egg; mix until smooth.</li>
+<li>Heat a lightly oiled griddle or pan over medium-high heat.</li>
+<li>Pour or scoop the batter onto the griddle, using approximately 1/4 cup for each pancake.</li>
+<li>Flip and cook until browned on the other side. Repeat with remaining batter.</li>
+<li>Pour the batter onto the pan and cook until bubbles form and the bottoms are golden.</li>
+<li>Serve and enjoy!</li>
+</ol>
+</div>
+
+</div>
+</body>
+</html>
+
+<script>
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 2000);
+  }
+</script>
